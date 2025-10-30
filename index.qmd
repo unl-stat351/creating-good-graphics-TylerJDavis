@@ -165,7 +165,7 @@ chart_d
 3.  Examine each chart and determine whether it effectively communicates changes in vaccine rates over time across different age groups.
     If the chart is inappropriate for that comparison, explain why; if it is appropriate but not optimal, explain what you would change.
 
-    A.   This does not show the time variable at all so that is inapproriate.
+    A.  This does not show the time variable at all so that is inapproriate.
 
     B.  This graph does show the relationship between vaccination rate, time, and age group.
         When looking at this graph you are able to see that changes over time that take place
@@ -179,7 +179,7 @@ chart_d
     What principles apply?
     Are they used effectively?
 
-    A.   The coloring of the age groups I believe is misleading as the blues are to similar and I find myself associating them with each other.
+    A.  The coloring of the age groups I believe is misleading as the blues are to similar and I find myself associating them with each other.
         The principle of similarity applies here and it shows how easily things can be associated with each other.
 
     B.  The coloring of the age groups I believe is misleading as the blues are to similar and I find myself associating them with each other.
@@ -254,9 +254,54 @@ Of course, the CDC only tracks number of vaccines, not the overall vaccination r
     -   Use the Census QuickFacts page https://www.census.gov/quickfacts/
     -   Use the [nc-est2024-agesex.xlsx](nc-est2024-agesex.xlsx) population by age and sex file I downloaded from the [US Census](https://www.census.gov/data/tables/time-series/demo/popest/2020s-national-detail.html).
 
+    ```{r}
+    library(readr)
+    library(readxl)
+    library(tidyverse)
+    real_data <- read_csv("Weekly_Cumulative_Estimated_Number_of_COVID_20251021.csv")
+    age_file <- read_excel("nc-est2024-agesex.xlsx")
+    age_data <- age_file[-c(1:2),c(1,5,8,11,14,17)] %>%
+      slice(-c(2,22,32:43))
+      
+    age_data[1,1] <- "Year"
+    col <- data.frame(colnames(age_data))
+    age_wide <- age_data %>% pivot_wider(
+      names_from = col[1,],
+      values_from = c(col[2:6,])
+    )
+
+    trans <- t(age_data)
+    rownames(trans) <- NULL
+    library(janitor)
+    new_age <- data.frame(trans) %>%
+      row_to_names(row_number = 1) %>%
+      select(-22)
+
+    col <- data.frame(colnames(new_age))
+    library(stringr)
+    final_age <- new_age %>%
+      mutate_all(as.numeric) %>%
+      group_by(Year) %>%
+      summarise(
+        `18+ Population` = sum(across(c(25, 28))),
+        `18-49 Population` =  sum(across(25,26,12)),
+        `18 - 64 Population` =  across(24),
+        `50 - 64 Population` = sum(across(13,14,15)),
+        `60 - 74 Population` =  sum(across(15,16,17)),
+        `75+ Population` = sum(across(18,19,20)),
+        `85+ Population` = across(20)
+      )
+    ```
+
 2.  Use the real data to generate the plot you created in 6.
     How does the real data change the appearance/message of the plot?
     Does anything get easier or more difficult?
+
+    ```{r}
+
+
+
+    ```
 
 3.  What annotations would you want to add to your chart?
     You may be able to find relevant information about e.g. approval dates of vaccines at [immunize.org's Vaccine Timeline](https://www.immunize.org/vaccines/vaccine-timeline/).
