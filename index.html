@@ -243,7 +243,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <img src="index_files/figure-html/fig-comparing-graphics-figures-1.png" class="img-fluid figure-img" data-ref-parent="fig-comparing-graphics-figures" alt="This figure is a pie chart that displays COVID vaccination rates by age group. The age groups are colored and the percent of overall COVID vaccination rates are displayed." width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-comparing-graphics-figures-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) Figure 1
+(a) This a pie chart displaying COVID vaccination rates by age group.
 </figcaption>
 </figure>
 </div>
@@ -255,7 +255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <img src="index_files/figure-html/fig-comparing-graphics-figures-2.png" class="img-fluid figure-img" data-ref-parent="fig-comparing-graphics-figures" alt="This figure is a line chart which diplays COVID vaccination rates are diplayed over a 12 week period. The x axis is mapping weeks while the y axis is mapping vaccination rate. Finally, the color is being mapped to age group." width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-comparing-graphics-figures-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(b) Figure 2
+(b) This is line chart which diplays COVID vaccination rates are diplayed over a 12 week period.
 </figcaption>
 </figure>
 </div>
@@ -269,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <img src="index_files/figure-html/fig-comparing-graphics-figures-3.png" class="img-fluid figure-img" data-ref-parent="fig-comparing-graphics-figures" alt="This figure is a stacked chart, descrbing vaccination rates over time and sorted by age group, which is the color mapping. The x axis is displaying time while the y axis is showing percent." width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-comparing-graphics-figures-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(c) Figure 3
+(c) This figure is a stacked chart, descrbing vaccination rates over time and sorted by age group, which is the color mapping
 </figcaption>
 </figure>
 </div>
@@ -281,7 +281,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <img src="index_files/figure-html/fig-comparing-graphics-figures-4.png" class="img-fluid figure-img" data-ref-parent="fig-comparing-graphics-figures" alt="This figure is a bar chart which diplays COVID vaccination rates are diplayed over a 12 week period. The x axis is mapping weeks while the y axis is mapping vaccination rate. Finally, the color is being mapped to age group." width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-comparing-graphics-figures-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(d) Figure 4
+(d) This figure is a bar chart which diplays COVID vaccination rates are diplayed over a 12 week period.
 </figcaption>
 </figure>
 </div>
@@ -386,7 +386,7 @@ Resources:</li>
 <ol start="3" type="1">
 <li><p>Examine each chart and determine whether it effectively communicates changes in vaccine rates over time across different age groups. If the chart is inappropriate for that comparison, explain why; if it is appropriate but not optimal, explain what you would change.</p>
 <ol type="A">
-<li><p>This does not show the time variable at all so that is inapproriate.</p></li>
+<li><p>This does not show the time variable at all so that is inappropriate.</p></li>
 <li><p>This graph does show the relationship between vaccination rate, time, and age group. When looking at this graph you are able to see that changes over time that take place</p></li>
 <li><p>This graph does a bad job of showing the changes over time is show a cumulative percentage on the y axis which does not allow you easily distinguish between the contribution between the age groups.</p></li>
 <li><p>The bar graph does a great job of the showing the relationship between our variables. The relationship however is not as noticeable as the line graph.</p></li>
@@ -396,7 +396,7 @@ Resources:</li>
 <li><p>The coloring of the age groups I believe is misleading as the blues are to similar and I find myself associating them with each other. The principle of similarity applies here and it shows how easily things can be associated with each other.</p></li>
 <li><p>The coloring of the age groups I believe is misleading as the blues are to similar and I find myself associating them with each other. The principle of similarity applies here and it shows how easily things can be associated with each other.</p></li>
 <li><p>The coloring of the age groups I believe is misleading as the blues are to similar and I find myself associating them with each other. The principle of similarity applies here and it shows how easily things can be associated with each other.</p></li>
-<li><p>The coloring of the age groups I believe is misleading as the blues are to similar and I find myself associating them with each other. The principle of proximity applies here and it shows how easily things can be associated with each other. The principle of continutiy also applies to this graph as we want to connect the bars and and form them into a line.</p></li>
+<li><p>The coloring of the age groups I believe is misleading as the blues are to similar and I find myself associating them with each other. The principle of proximity applies here and it shows how easily things can be associated with each other. The principle of continuity also applies to this graph as we want to connect the bars and and form them into a line.</p></li>
 </ol></li>
 <li><p>Consider the “messages” you might want viewers to take away from this data and the visuals you generate.</p>
 <ol type="a">
@@ -421,53 +421,50 @@ Resources:</li>
 <li>What obstacles do you expect to encounter designing a chart to facilitate these comparisons?</li>
 </ol>
 <blockquote class="blockquote">
-<p>I think that choosing proper coloring will be an issue and formating the lines properly.</p>
+<p>I think that choosing proper coloring will be an issue and formatting the lines properly.</p>
 </blockquote></li>
 <li><p>Considering your answers to the questions above, create your own version of the chart that minimizes cognitive load and maximizes interpretability. Explain the changes that you made and why they improve the chart compared to the ones generated by Claude.</p></li>
 </ol>
-<details class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(viridis)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: viridisLite</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>new_chart<span class="ot">&lt;-</span> <span class="fu">ggplot</span>(vaccination_data, <span class="fu">aes</span>(<span class="at">x =</span> week, <span class="at">y =</span> vaccination_rate, </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">color =</span> age_group, <span class="at">group =</span> age_group)) <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_viridis</span>(<span class="at">discrete =</span> <span class="cn">TRUE</span>, <span class="at">option =</span> <span class="st">"D"</span>) <span class="sc">+</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Vaccination Rates Over Time by Age Group"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Week"</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Vaccination Rate (%)"</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Age Group"</span>) <span class="sc">+</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">reverse =</span> <span class="cn">TRUE</span>)) <span class="sc">+</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>)<span class="sc">+</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">100</span>, <span class="at">by =</span> <span class="dv">10</span>),<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">100</span>))</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>new_chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<details class="code-fold">
+<summary>Code</summary>
 </details>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>new_chart<span class="ot">&lt;-</span> <span class="fu">ggplot</span>(vaccination_data, <span class="fu">aes</span>(<span class="at">x =</span> week, <span class="at">y =</span> vaccination_rate, </span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">color =</span> age_group, <span class="at">group =</span> age_group)) <span class="sc">+</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_viridis</span>(<span class="at">discrete =</span> <span class="cn">TRUE</span>, <span class="at">option =</span> <span class="st">"D"</span>) <span class="sc">+</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Vaccination Rates Over Time by Age Group"</span>,</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Week"</span>,</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Vaccination Rate (%)"</span>,</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Age Group"</span>) <span class="sc">+</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">reverse =</span> <span class="cn">TRUE</span>)) <span class="sc">+</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>)<span class="sc">+</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">100</span>, <span class="at">by =</span> <span class="dv">10</span>),<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">100</span>))</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>new_chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<pre><code>Loading required package: viridisLite</code></pre>
-<div id="fig-fix" class="quarto-layout-panel">
+</div>
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-fix" class="quarto-figure quarto-figure-center quarto-float anchored" alt="This figure is a line graph that shows the relationship between time and vaccination rates by age group. The x - axis shows the week, the y axis shows the vaccination rates, and color indicates the age group.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-layout-row">
-<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-fix" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-fix" class="quarto-figure quarto-figure-center quarto-float anchored" alt="This figure is a line graph that shows the relationship between time and vaccination rates by age group. The x - axis shows the week, the y axis shows the vaccination rates, and color indicates the age group.">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-fix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="index_files/figure-html/fig-fix-1.png" class="img-fluid figure-img" data-ref-parent="fig-fix" alt="This figure is a line graph that shows the relationship between time and vaccination rates by age group. The x - axis shows the week, the y axis shows the vaccination rates, and color indicates the age group." width="672">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-fix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) Figure 5
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
+<img src="index_files/figure-html/fig-fix-1.png" class="img-fluid figure-img" alt="This figure is a line graph that shows the relationship between time and vaccination rates by age group. The x - axis shows the week, the y axis shows the vaccination rates, and color indicates the age group." width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: COVID Vaccination Rates
+Figure&nbsp;2: Line Graph with COVID Vaccination Rates Updated
 </figcaption>
 </figure>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="choose-your-own-adventure" class="level1" data-number="2">
@@ -605,7 +602,7 @@ using the `.groups` argument.</code></pre>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>total_data <span class="ot">&lt;-</span> <span class="fu">left_join</span>(real,final_age,<span class="at">by =</span> <span class="fu">c</span>(<span class="st">"Age_Group"</span>,<span class="st">"Year"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p>Use the real data to generate the plot you created in 6. How does the real data change the appearance/message of the plot? Does anything get easier or more difficult?</p>
-<p>::: {#fig-real .cell}</p>
+<div class="cell">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>total_per <span class="ot">&lt;-</span> total_data <span class="sc">%&gt;%</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Year <span class="sc">==</span> <span class="st">"2023"</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">percent =</span> <span class="dv">100</span><span class="sc">*</span>(Total_Doses<span class="sc">/</span>Population))</span>
@@ -616,7 +613,7 @@ using the `.groups` argument.</code></pre>
 <span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="st">"Date"</span>,</span>
 <span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="st">"Percent of Population Vaccinated"</span>,</span>
 <span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"Age Group"</span>,</span>
-<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"A New COVID Vaccine came out Sep 11, 2023"</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"A new COVID vaccine came out Sep 11, 2023."</span></span>
 <span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">scale_color_viridis</span>(<span class="at">discrete =</span> <span class="cn">TRUE</span>, <span class="at">option =</span> <span class="st">"D"</span>) <span class="sc">+</span> </span>
 <span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">reverse =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -626,20 +623,20 @@ using the `.groups` argument.</code></pre>
 <img src="index_files/figure-html/fig-real-1.png" class="img-fluid figure-img" alt="This figure is a line graph that shows the relationship between time and vaccination rates by age group. The x - axis shows the week, the y axis shows the vaccination rates, and color indicates the age group." width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-real-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Figure 6
+Figure&nbsp;3: Line Graph Displaying COVID Vaccination Rates With Real Data
 </figcaption>
 </figure>
 </div>
-</div></li>
-</ol>
-<p>COVID Vaccination Rates :::</p>
-<ol start="3" type="1">
-<li><p>What annotations would you want to add to your chart? You may be able to find relevant information about e.g.&nbsp;approval dates of vaccines at <a href="https://www.immunize.org/vaccines/vaccine-timeline/">immunize.org’s Vaccine Timeline</a>. Add at least one annotation to your chart, but balance utility with clutter.</p></li>
+</div>
+</div>
+<p>This data shows a more clear image of the fall - winter of 2023 and the cumulative percent of people who received the new vaccine. This is better than the previous graph as we have no true context in time for that data. I believe that this data is slightly easier to understand instead of a random 12 week period we know the dates and what vaccine the percentage is modeling.</p></li>
+<li><p>What annotations would you want to add to your chart? You may be able to find relevant information about e.g.&nbsp;approval dates of vaccines at <a href="https://www.immunize.org/vaccines/vaccine-timeline/">immunize.org’s Vaccine Timeline</a>. Add at least one annotation to your chart, but balance utility with clutter.</p>
+<p>The new vaccine was released in September ,11 2023. This was right before the date starts on the chart.</p></li>
 <li><p>How would you modify this chart if your goal was to compare vaccination rates for each age group in 2023 and 2024? Explain your answer, highlighting how your modifications would reduce the cognitive load of making the comparison of interest.</p>
-<p>We would need to have stronger color definitions as lines will most likely converge or cross as time goes on.</p></li>
+<p>I think one way of doing this would be to facet the graphs by year. This would give the viewer less things to look at in a single plot. Another thing that could be done it to increase the size of the age groups and take out unnecessary groups so that the viewer doesn’t have as much to look at.</p></li>
 <li><p>How would you use your statistical training to test and visually highlight any statistically significant differences? Explain. You do not have to actually implement any statistical testing to answer this question.</p></li>
 </ol>
-<p>I believe that running a t - test over the cumulative total at distinct time points would give us a good sense of if the age groups are statistically different at certain time points.</p>
+<p>I believe that running a t - test over the cumulative total at distinct time points would give us a good sense of if the age groups are statistically different at time throughout the year. I also think that going through and highlighting time points where age groups are a certain distance apart would be something that allows the reader to see how separate the groups are.</p>
 </section>
 
 </main>
